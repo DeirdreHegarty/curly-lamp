@@ -1,0 +1,18 @@
+<h1>This is the <code>meals</code> component</h1>
+<ul class="lead">
+  <li *ngFor="let item of theMenu">
+
+  	<div class="alert alert-success" role="alert">
+    	Menu Item Name: <mark>{{item.name}}</mark><br/> 
+    	Menu Item Course: <strong>{{item.course}}</strong><br/>  
+    	Menu Item Price: €{{item.price}}
+    </div>
+
+  </li>
+  <!-- can also reference this way (in meals.component.ts) -->
+  <div class="alert alert-warning" role="alert">
+	  Menu Item Name: <kbd>{{breakfast.name}}</kbd><br/>
+	  Menu Item Course: {{breakfast.course}}<br/>
+	  Menu Item Price: €{{breakfast.price}}
+</div>
+</ul>
