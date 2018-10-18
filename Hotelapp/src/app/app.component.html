@@ -1,0 +1,23 @@
+<h1>The App-Root Component</h1>
+<div class = "row">
+
+  <div class = "col">
+    <a  routerLink="/welcomeRoute" routerLinkActive="active" class="btn btn-lg   btn-info">Welcome</a>
+  </div>
+  <div class = "col">
+    <a  routerLink="/roomsRoute" routerLinkActive="active" class="btn btn-lg   btn-danger">Rooms</a>
+  </div>
+
+  <div class = "col">
+    <a   routerLink="/foodRoute" routerLinkActive="active" class="btn btn-lg    btn-warning">Food</a>
+  </div>
+  <div class = "col">
+    <a   routerLink="/activitiesRoute" routerLinkActive="active" class="btn btn-lg btn-info">Activities</a> 
+  </div>
+  <div class = "col">
+    <a   routerLink="/faqRoute" routerLinkActive="active" class="btn btn-lg  btn-primary">FAQ</a>
+  </div>
+</div>
+
+<!-- the COMPONENT TEMPLATE is rendered within the <router-outlet> -->
+<router-outlet></router-outlet>
